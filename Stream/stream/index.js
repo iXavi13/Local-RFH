@@ -1,16 +1,17 @@
-// const HTTPS_PORT = 4000; 
-// const MAIN_SERVER_ADDR = "http://localhost:3000";
-// const STREAM_SERVER_ADDR = "https://localhost:4000";
-const HTTPS_PORT = 8443;
-const MAIN_SERVER_ADDR = "http://roomsforhumanity.org:8080";
-const STREAM_SERVER_ADDR = "https://stream.roomsforhumanity.org";
-const DEV_SERVER_ADDR = "http://dev.roomsforhumanity.org:8080";
+ const HTTPS_PORT = 4000; 
+ const MAIN_SERVER_ADDR = "http://localhost:8080";
+ const STREAM_SERVER_ADDR = "https://localhost:4000";
+const DEV_SERVER_ADDR = "http://localhost:8080";
+//const HTTPS_PORT = 8443;
+//const MAIN_SERVER_ADDR = "http://roomsforhumanity.org:8080";
+//const STREAM_SERVER_ADDR = "https://stream.roomsforhumanity.org";
+//const DEV_SERVER_ADDR = "http://dev.roomsforhumanity.org:8080";
 
 const express = require('express');
 const https = require('https');
 const socketIO = require('socket.io');
 const fs = require('fs');
-const firebase = require('firebase');
+//const firebase = require('firebase');
 
 /******** OBJECTS ***********/
 
@@ -27,7 +28,7 @@ var config = {
     storageBucket: "rooms-for-humanity.appspot.com",
     messagingSenderId: "708739717802"
 };
-firebase.initializeApp(config);
+//firebase.initializeApp(config);
 
 /************  SERVER SETUP *************/
 
